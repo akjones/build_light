@@ -1,10 +1,12 @@
-source :gemcutter
+source "https://rubygems.org"
 
-gem 'nokogiri'
-gem 'atom'
-gem 'ruby-usb'
+ruby "2.1.0"
+
+gem "nokogiri"
+gem "atom"
+gem "ruby-usb"
 
 group :development do
-  gem 'rspec'
-  gem 'infinity_test'
+  gem "rspec"
+  gem "infinity_test"
 end

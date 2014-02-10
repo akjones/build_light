@@ -18,7 +18,7 @@ describe HudsonMonitor do
         </entry>
       </feed>
     }
-    subject.stub!(:rss).and_return(rss)
+    subject.stub(:rss).and_return(rss)
     subject.check.should == {
       'Project 1' => :green,
       'Project 2' => :yellow,

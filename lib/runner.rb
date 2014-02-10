@@ -35,8 +35,6 @@ class Runner
           end
         end
       rescue Exception => e
-        puts e.inspect
-        puts e.backtrace
         # keep running
       ensure
         @checks += 1

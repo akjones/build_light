@@ -16,7 +16,7 @@ describe GoMonitor do
   <Project name="OnlineCustomers :: AcceptanceTest" activity="Sleeping" lastBuildStatus="Failed" lastBuildLabel="1.385" lastBuildTime="2011-04-11T18:28:01" webUrl="http://192.168.105.28:8153/go/pipelines/OnlineCustomers/385/AcceptanceTest/1" />
 </Projects>
     }
-    subject.stub!(:rss).and_return(rss)
+    subject.stub(:rss).and_return(rss)
     subject.check.should == {
         "Addressing :: fullbuild" => :green,
         "Addressing :: package" => :yellow,
